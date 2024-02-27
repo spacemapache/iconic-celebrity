@@ -4,24 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Anne Hathaway</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .taylor-swift {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .other-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    </style>
+
+    <title>Taylor Swift</title>
   </head>
   <body>
     <div class="container">
-      <h1>Anne Hathaway</h1>
-      <h2>About Anne</h2>
-      <img src="src/anne-hathaway.jpg" class="anne-hathaway" />
-      <p>
-        Anne Jacqueline Hathaway is an American actress. Her accolades include
-        an Academy Award, a British Academy Film Award, a Golden Globe Award,
-        and a Primetime Emmy Award. Her films have grossed over $6.8 billion
-        worldwide, and she appeared on the Forbes Celebrity 100 list in 2009.
+      <h1>Taylor Swift</h1>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/822/original/taylor-header.png?1709016328"
+        class="taylor-swift"
+      />
+      <h2>About Taylor</h2>
+      <p class="about-taylor">
+        Taylor Alison Swift (born December 13, 1989) is an American
+        singer-songwriter, record producer, actress, director, philanthropist,
+        businesswoman, and cultural icon. Her discography spans multiple genres
+        and her narrative songwriting, which is often inspired by her personal
+        life, has received widespread media coverage and critical praise.
       </p>
-      <h2>Iconic Roles</h2>
-      <img src="src/princess-diaries.jpg" class="princess-diaries" />
-      <img src="src/devil-wears-prada.jpg" class="devil-prada" />
-      <img src="src/dark-knight.jpg" class="dark-knight" />
-      <img src="src/interstellar.jpg" class="interstellar" />
+      <p class="awards">
+        Taylor has won 657 awards and has had 1,252 nominations.
+    <small>
+      Source by <a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Taylor_Swift">Wikipedia</a>
+      </p>
+      <section>
+        <div class="other-links">
+          <a href="https://store.taylorswift.com/" class="shop-link">Shop</a>
+          <p class="ttpd">
+            The Tortured Poets Department coming out on 19th April
+          </p>
+          <a href="https://www.taylorswift.com/tour/" class="tour-link"
+            >Tour Dates</a
+          >
+        </div>
+      </section>
     </div>
+    <footer>
+      Coded by <a href="/">Isabelle Ang</a>
+    </footer>
   </body>
 </html>
