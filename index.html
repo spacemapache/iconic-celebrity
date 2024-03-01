@@ -5,20 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <style>
-      h1 {
+      body {
         text-align: center;
       }
+      
+      h1 {
+        text-align: center;
+        font-size: 65px;
+      }
+
+     ul {
+      list-style: none;
+      
+     }
 
       .taylor-swift {
         display: block;
         margin: 0 auto;
       }
 
-      .other-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+      .about-taylor {
+        border: solid 1px black;
       }
+
+      .ttpd-vinyl {
+        max-width: 50%;
+        max-height: 50%
+      }
+
+      .eras-tour {
+        margin-bottom: 50px;
+      }
+
+      #tour-link {
+        text-decoration: none;
+        font-size: 32px;
+        color: black;
+        border: 1px solid black;
+        padding: 20px;
+        
+        
+
+      }
+
+      
     </style>
 
     <title>Taylor Swift</title>
@@ -32,6 +62,7 @@
         class="taylor-swift"
       />
       <h2>About Taylor</h2>
+      <section>
       <p class="about-taylor">
         Taylor Alison Swift (born December 13, 1989) is an American
         singer-songwriter, record producer, actress, director, philanthropist,
@@ -44,17 +75,34 @@
     <small>
       Source by <a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Taylor_Swift">Wikipedia</a>
       </p>
-      <section>
-        <div class="other-links">
-          <a href="https://store.taylorswift.com/" class="shop-link">Shop</a>
-          <p class="ttpd">
-            The Tortured Poets Department coming out on 19th April
-          </p>
-          <a href="https://www.taylorswift.com/tour/" class="tour-link"
-            >Tour Dates</a
-          >
-        </div>
       </section>
+      <section>
+        
+          <a href="https://store.taylorswift.com/" id="shop-link">Shop the Official Store</a>
+          <div class="shop-items">
+          <ul>
+            <li class="ttpd-vinyl">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/039/original/taylor-ttpd-vinyl.png?1709189809" />
+            <br />
+           The Torture Poets Department Vinyl + Bonus Track "The Manuscript"  
+          </li>
+             <li>
+              TTP
+            </li>
+             <li>
+              TTP
+            </li>
+
+          </ul>
+          </div>
+             </section>    
+             <div class="tour">
+         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/040/original/fontbolt.png?1709193699" class="eras-tour"/>
+         <br/>   
+         <a href="https://www.taylorswift.com/tour/" id="tour-link"
+            >Tour Dates</a>
+      </div>
+
     </div>
     <footer>
       Coded by <a href="/">Isabelle Ang</a>
