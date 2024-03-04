@@ -42,8 +42,20 @@
         height: 100vh;
       }
 
-      .awards {
-        margin-bottom: 150px;
+      .taylor-bio {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      }
+
+      .taylor-awards {
+        margin-bottom: 100px;
+      }
+
+      small a{
+        text-decoration: none;
+        color: black;
       }
 
       .ttpd-vinyl {
@@ -62,23 +74,30 @@
       }
 
       #shop-link {
-        font-size: 30px;
+        font-size: 60px;
         text-decoration: none;
-        color: grey;
+        color: white;
       }
+
+      .eras-section {
+        background-color: #4f4c4d;
+      }
+
+     
 
       #eras-tour {
         margin-bottom: 50px;
+   
       }
 
       #eras-tour img {
-        max-width: 35%;
-        max-height: 35%;
+        max-width: 65%;
+        max-height: 65%;
       }
 
       .eras-tour-next img {
-        max-width: 25%;
-        max-height: 25%;
+        max-width: 30%;
+        max-height: 30%;
       }
       
       #tour-link {
@@ -88,6 +107,11 @@
 
       footer {
         margin-top: 50px;
+      }
+
+      footer a{
+        text-decoration: none;
+        color: white;
       }
 
       button {
@@ -107,12 +131,21 @@
       }
 
       form {
-      padding: 20px;
+        padding: 20px;
        display: flex;
        align-items: row;
        justify-content: center;
+      }
 
-       
+      .email-input {
+        width: 300px;
+        height: 30px;
+        margin-right: 20px;
+      }
+
+        .name-input {
+        width: 300px;
+        height: 30px;
       }
 
 
@@ -122,33 +155,24 @@
     <title>Taylor Swift</title>
   </head>
   <body>
-    <div class="container">
+   <div class="container">
       <h1>Taylor Swift</h1>
 
       <div class="navigation-links">
-           <a
-        href="index.html"
-        class="homepage-link"
-        >Home</a
-      >
+        <a
+        href="index.html">Home</a>
       
         <a
         href="#about-taylor"
-        class="about-taylor"
-        >About</a
-      >
+        >About</a>
 
            <a
         href="#shop-link"
-        class="about-taylor"
-        >Shop</a
-      >
+        >Shop</a>
 
            <a
         href="#eras-tour"
-        class="about-taylor"
-        >Tour</a
-      >
+        >Tour</a>
       </div>
 
       <img
@@ -157,7 +181,7 @@
       />
       <h2 id="about-taylor">About Taylor</h2>
       <section>
-      <p>
+      <p class="taylor-bio">
         Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Her artistry and entrepreneurship have influenced the music industry, popular culture, and politics, while her life is a subject of widespread media coverage.
 <br/>
 <br/>
@@ -169,8 +193,9 @@ After signing with Republic Records in 2018, Swift released the eclectic pop alb
 <br/>
 One of the world's best-selling musicians, Swift has sold over 200 million records as of 2019. She is the highest-grossing female touring act, the most-streamed woman on Spotify and Apple Music, and the first billionaire with music as the main source of income. Six of her albums have opened with over one million sales in a week. The 2023 Time Person of the Year, Swift has appeared on lists such as Rolling Stone's 100 Greatest Songwriters of All Time, Billboard's Greatest of All Time Artists, and Forbes' World's 100 Most Powerful Women. Her accolades include 14 Grammy Awards, a Primetime Emmy Award, 40 American Music Awards, 40 Billboard Music Awards, and 23 MTV Video Music Awards; she has won the Grammy Award for Album of the Year, the MTV Video Music Award for Video of the Year, and the IFPI Global Recording Artist of the Year for a record four times each.
       </p>
-      <p class="awards">
+      <p class="taylor-awards">
         Taylor has won 657 awards and has had 1,252 nominations.
+      <br/>
     <small>
       Source by <a href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Taylor_Swift">Wikipedia</a>
       </p>
@@ -187,7 +212,7 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
           </a>
             </p>
           </div>
-             </section>    
+             <section class="eras-section">    
              <div id="eras-tour">
               <a href="https://www.taylorswift.com/tour/" id="tour-link"
             >  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/492/original/erastour-black.png?17095220469" />
@@ -208,16 +233,19 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
     <form>
    <input type="email"
    placeholder="Email Address"
+   class="email-input"
    >
    <input type="text"
-   placeholder="Name"/>
+   placeholder="Name"
+   class="name-input"/>
    </form>
    <button id="submit-btn">
     Submit
    </button>
+   
   </div>
 </section>
-    </div>
+   </div>
     <footer>
       Coded by <a href="/">Isabelle Ang</a>
     </footer>
