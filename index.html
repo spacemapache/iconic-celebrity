@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <style>
+      :root {
+        --primary-color: #746f70;
+        --second-color: #cdc9c1;
+      }
+
       body {
         text-align: center;
+        background-color: var(--primary-color);
       }
       
       h1 {
@@ -14,39 +20,101 @@
         font-size: 65px;
       }
 
-     ul {
-      list-style: none;
+     .navigation-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
       
+     }
+
+     .navigation-links a{
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
      }
 
       .taylor-swift {
         display: block;
         margin: 0 auto;
+        height: 100vh;
       }
 
-      .about-taylor {
-        border: solid 1px black;
+      .awards {
+        margin-bottom: 150px;
       }
 
       .ttpd-vinyl {
-        max-width: 50%;
-        max-height: 50%
+        font-size: 18px;
+        margin-bottom: 150px;
       }
 
-      .eras-tour {
+      .ttpd-vinyl img {
+        max-width: 25%;
+        max-height: 25%
+      }
+      
+      .ttpd-vinyl a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #shop-link {
+        font-size: 30px;
+        text-decoration: none;
+        color: grey;
+      }
+
+      #eras-tour {
         margin-bottom: 50px;
       }
 
+      #eras-tour img {
+        max-width: 35%;
+        max-height: 35%;
+      }
+
+      .eras-tour-next img {
+        max-width: 25%;
+        max-height: 25%;
+      }
+      
       #tour-link {
         text-decoration: none;
-        font-size: 32px;
-        color: black;
-        border: 1px solid black;
         padding: 20px;
-        
-        
+      }
+
+      footer {
+        margin-top: 50px;
+      }
+
+      button {
+        height: 30px;
+        width: 80px;
+        font-size: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        transition: all 200ms ease-in-out;
+        border: 2px solid #c5ac90;
+        background-color: var(--primary-color);
+        color: white;
 
       }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      form {
+      padding: 20px;
+       display: flex;
+       align-items: row;
+       justify-content: center;
+
+       
+      }
+
 
       
     </style>
@@ -57,18 +125,49 @@
     <div class="container">
       <h1>Taylor Swift</h1>
 
+      <div class="navigation-links">
+           <a
+        href="index.html"
+        class="homepage-link"
+        >Home</a
+      >
+      
+        <a
+        href="#about-taylor"
+        class="about-taylor"
+        >About</a
+      >
+
+           <a
+        href="#shop-link"
+        class="about-taylor"
+        >Shop</a
+      >
+
+           <a
+        href="#eras-tour"
+        class="about-taylor"
+        >Tour</a
+      >
+      </div>
+
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/822/original/taylor-header.png?1709016328"
         class="taylor-swift"
       />
-      <h2>About Taylor</h2>
+      <h2 id="about-taylor">About Taylor</h2>
       <section>
-      <p class="about-taylor">
-        Taylor Alison Swift (born December 13, 1989) is an American
-        singer-songwriter, record producer, actress, director, philanthropist,
-        businesswoman, and cultural icon. Her discography spans multiple genres
-        and her narrative songwriting, which is often inspired by her personal
-        life, has received widespread media coverage and critical praise.
+      <p>
+        Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Her artistry and entrepreneurship have influenced the music industry, popular culture, and politics, while her life is a subject of widespread media coverage.
+<br/>
+<br/>
+Swift began professional songwriting at 14. She signed with Big Machine Records in 2005 and achieved prominence as a country pop singer with the albums Taylor Swift (2006) and Fearless (2008). The singles "Teardrops on My Guitar", "Love Story", and "You Belong with Me" were crossover successes on country and pop radio formats and brought Swift mainstream fame. She experimented with rock and electronic styles on her next albums, Speak Now (2010) and Red (2012), respectively, with the latter featuring her first Billboard Hot 100 number-one single, "We Are Never Ever Getting Back Together". Swift recalibrated her image from country to pop with 1989 (2014), a synth-pop album supported by the chart-topping songs "Shake It Off", "Blank Space", and "Bad Blood". Media scrutiny inspired the hip-hop-influenced Reputation (2017) and its number-one single "Look What You Made Me Do".
+<br/>
+<br/>
+After signing with Republic Records in 2018, Swift released the eclectic pop album Lover (2019) and the autobiographical documentary Miss Americana (2020). She explored indie folk styles on the 2020 albums Folklore and Evermore, subdued electropop on Midnights (2022), and re-recorded four albums subtitled Taylor's Version[a] after a dispute with Big Machine. These albums spawned the number-one songs "Cruel Summer", "Cardigan", "Willow", "Anti-Hero", "All Too Well", and "Is It Over Now?". Her Eras Tour (2023–2024) and its accompanying concert film became the highest-grossing tour and concert film of all time, respectively. Swift has directed videos and films such as Folklore: The Long Pond Studio Sessions (2020) and All Too Well: The Short Film (2021).
+<br/>
+<br/>
+One of the world's best-selling musicians, Swift has sold over 200 million records as of 2019. She is the highest-grossing female touring act, the most-streamed woman on Spotify and Apple Music, and the first billionaire with music as the main source of income. Six of her albums have opened with over one million sales in a week. The 2023 Time Person of the Year, Swift has appeared on lists such as Rolling Stone's 100 Greatest Songwriters of All Time, Billboard's Greatest of All Time Artists, and Forbes' World's 100 Most Powerful Women. Her accolades include 14 Grammy Awards, a Primetime Emmy Award, 40 American Music Awards, 40 Billboard Music Awards, and 23 MTV Video Music Awards; she has won the Grammy Award for Album of the Year, the MTV Video Music Award for Video of the Year, and the IFPI Global Recording Artist of the Year for a record four times each.
       </p>
       <p class="awards">
         Taylor has won 657 awards and has had 1,252 nominations.
@@ -80,32 +179,51 @@
         
           <a href="https://store.taylorswift.com/" id="shop-link">Shop the Official Store</a>
           <div class="shop-items">
-          <ul>
-            <li class="ttpd-vinyl">
+            <p class="ttpd-vinyl">
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/039/original/taylor-ttpd-vinyl.png?1709189809" />
             <br />
+            <a href="https://store.taylorswift.com/collections/the-tortured-poets-department-homepage/products/the-tortured-poets-department-vinyl-bonus-track-the-manuscript">
            The Torture Poets Department Vinyl + Bonus Track "The Manuscript"  
-          </li>
-             <li>
-              TTP
-            </li>
-             <li>
-              TTP
-            </li>
-
-          </ul>
+          </a>
+            </p>
           </div>
              </section>    
-             <div class="tour">
-         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/040/original/fontbolt.png?1709193699" class="eras-tour"/>
+             <div id="eras-tour">
+              <a href="https://www.taylorswift.com/tour/" id="tour-link"
+            >  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/492/original/erastour-black.png?17095220469" />
+         </a>
+         <br/>
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/494/original/eras-photo.jpeg?1709525018"/>
+       </div>
+         <div class="eras-tour-next">
+         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/493/original/next-show-eras.png?1709524012"/>
+         </div>
          <br/>   
-         <a href="https://www.taylorswift.com/tour/" id="tour-link"
-            >Tour Dates</a>
+       
+            <br/>
+            Paris La Defense Arena
       </div>
-
+<section>
+  <div id="email-subscription">
+    <form>
+   <input type="email"
+   placeholder="Email Address"
+   >
+   <input type="text"
+   placeholder="Name"/>
+   </form>
+   <button id="submit-btn">
+    Submit
+   </button>
+  </div>
+</section>
     </div>
     <footer>
       Coded by <a href="/">Isabelle Ang</a>
     </footer>
+
+    <script>
+
+    </script>
   </body>
 </html>
