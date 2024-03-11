@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    
     <style>
       :root {
         --primary-color: #746f70;
@@ -17,9 +21,13 @@
       
       h1 {
         text-align: center;
-        font-size: 65px;
-      }
+        font-size: 70px;
+        font-family: "Aguafina Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
 
+      
      .navigation-links {
       display: flex;
       flex-direction: row;
@@ -98,6 +106,7 @@
       .eras-tour-next img {
         max-width: 30%;
         max-height: 30%;
+        margin-bottom: 50px;
       }
       
       #tour-link {
@@ -112,6 +121,10 @@
       footer a{
         text-decoration: none;
         color: white;
+      }
+
+      h2 {
+        font-size: 30px;
       }
 
       button {
@@ -131,6 +144,7 @@
       }
 
       form {
+        margin-top: 10px;
         padding: 20px;
        display: flex;
        align-items: row;
@@ -141,12 +155,19 @@
         width: 300px;
         height: 30px;
         margin-right: 20px;
+        border: 2px solid #c5ac90;
+        font-size: 15px;
+        
       }
 
         .name-input {
         width: 300px;
         height: 30px;
+        border: 2px solid #c5ac90;
+        font-size: 15px;
       }
+
+  
 
 
       
@@ -223,13 +244,13 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
          <div class="eras-tour-next">
          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/493/original/next-show-eras.png?1709524012"/>
          </div>
-         <br/>   
-       
-            <br/>
-            Paris La Defense Arena
+         
       </div>
+
+
 <section>
   <div id="email-subscription">
+    <h2>Sign up for the latest updates</h2>
     <form>
    <input type="email"
    placeholder="Email Address"
@@ -239,7 +260,7 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
    placeholder="Name"
    class="name-input"/>
    </form>
-   <button id="submit-btn">
+   <button onclick="submitBtn()" id="submit-btn">
     Submit
    </button>
    
@@ -251,6 +272,13 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
     </footer>
 
     <script>
+
+function submitBtn() {
+  event.preventDefault();
+  alert(`Thank you for signing up!`);
+}
+
+
 
     </script>
   </body>
