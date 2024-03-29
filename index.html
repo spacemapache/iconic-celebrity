@@ -12,6 +12,8 @@
       :root {
         --primary-color: #746f70;
         --second-color: #cdc9c1;
+        --body-font: "Martian Mono", monospace;
+
       }
 
       body {
@@ -45,20 +47,24 @@
      }
 
       .taylor-swift {
-        display: block;
-        margin: 0 auto;
-        height: 100vh;
+        max-width: 100%;
+        
       }
 
       .taylor-bio {
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
-      font-size: 16px;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: var(--body-font);
       }
 
       .taylor-awards {
         margin-bottom: 100px;
+        font-size: 15px;
+      font-weight: 300;
+      font-family: var(--body-font);
       }
 
       small a{
@@ -79,16 +85,20 @@
       .ttpd-vinyl a {
         text-decoration: none;
         color: black;
+        font-size: 15px;
+      font-weight: 300;
+      font-family: var(--body-font);
       }
 
       #shop-link {
-        font-size: 60px;
+        font-size: 50px;
         text-decoration: none;
         color: white;
       }
 
       .eras-section {
-        background-color: #4f4c4d;
+        background-color: #e3e3e3;
+    
       }
 
      
@@ -112,6 +122,11 @@
       #tour-link {
         text-decoration: none;
         padding: 20px;
+        
+      }
+
+      #tour-link img {
+        margin-bottom: 10px;
       }
 
       footer {
@@ -125,6 +140,8 @@
 
       h2 {
         font-size: 30px;
+        
+     
       }
 
       button {
@@ -149,6 +166,7 @@
        display: flex;
        align-items: row;
        justify-content: center;
+       
       }
 
       .email-input {
@@ -165,6 +183,24 @@
         height: 30px;
         border: 2px solid #c5ac90;
         font-size: 15px;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 40px;
+        }
+
+        .navigation-links, #about-taylor {
+        font-size: 20px;
+        }
+
+        .taylor-bio, .taylor-awards, .ttpd-vinyl a {
+  font-size: 12px;
+        }
+
+        #shop-link, #email-subscription .sign-up {
+          font-size: 30px;
+        }
       }
 
   
@@ -250,7 +286,7 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
 
 <section>
   <div id="email-subscription">
-    <h2>Sign up for the latest updates</h2>
+    <h2 class="sign-up">Sign up for the latest updates</h2>
     <form>
    <input type="email"
    placeholder="Email Address"
@@ -268,7 +304,7 @@ One of the world's best-selling musicians, Swift has sold over 200 million recor
 </section>
    </div>
     <footer>
-      Coded by <a href="/">Isabelle Ang</a>
+      Coded by <a href="https://github.com/spacemapache/iconic-celebrity">Isabelle Ang</a>
     </footer>
 
     <script>
